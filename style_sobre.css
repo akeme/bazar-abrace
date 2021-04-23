@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position:  relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Seletor de grupo */
+h1, h2, h3, h4, h5, h6 {
+  /* top Right Bottom Left */
+  margin: 4px 0 4px 0;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*main, nav {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+main {
+  margin-bottom: 120px;
+  padding: 16px 8px 0px 8px;
+}
+
+/* Header */
+header {
+  background-color: #bc6c25;
+  /* Hack para resolver conteúdo flutuante */
+  padding: 5px 0 0 0;
+}
+
+header nav li {
+  float: left;
+}
+
+header img {
+  width: 50px;
+  height: 50px
+}
+
+header a {
+  color: #fff;
+  padding: 16px 16px;
+  /* Hack para converte o elemento para bloco */
+  display: block;
+}
+
+nav .active {
+  background-color: #dda15e;
+  border-radius: 5px;
+}
+
+nav a:hover:not(.active) {
+  background-color: #FEFAE0;
+  border-radius: 5px
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #bc6c25;
+  z-index: 2;
+  padding-bottom: 2px 2px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.btn{
+  padding: 16px 16px;
+  align-items: center
+}
+
+
+
+/* Image Hero */
+.hero {
+  height: 480px;
+  background-image: url(https://static1.patasdacasa.com.br/articles/9/57/9/@/2089-o-husky-siberiano-e-um-cachorro-apaixona-articles_media_mobile-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover  ;
+  background-position: center;
+  position: relative;
+}
+
+.hero-text {
+  position:  absolute  ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align:  center;
+ 
+}
+
+.hero-text h1 {
+  font-size: 2em;
+ 
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  margin-bottom: 32px;
+}
+
+.btn2 {
+  padding: 12px;
+  border-radius: 5px;
+
+}
+#button-insta{
+  src: url("https://www.instagram.com/ong.abrace/")
+}
+
+
+
+
+
+
+/* Card de produtos */
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  width: 80%;
+}
+
+.card-container { 
+  padding: 16px; 
+}
+
+.card-col {
+  float: left;
+  padding: 8px 16px;
+  /* 100/3 = 33.33% */
+  width: 25%;
+}
+
+
+
+/* Cores */
+.color-blue {
+    background-color: #1be7ff;
+}
+
+.color-pink {
+    background-color: #bd4892;
+}
+
+.color-orange {
+    background-color: #f5832a;
+}
+
+.floatfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #bc6c25;
+  padding: 8px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer img {
+  width: 64px;
+}
+
+footer p{
+  color: white;
+  text-align: center;
+
+}
+@media screen and (max-width: 800px) {
+  .card-col {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
