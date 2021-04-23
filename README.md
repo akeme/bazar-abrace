@@ -17,7 +17,7 @@ https://br.cellep.com/estacaohack/
 
 **Squad 07:**
 
-* Cyntia Ogawa
+* Cynthia Ogawa
 * Mariana Ogawa
-* Marcos antonio
-* Renan souza
+* Marcos Antonio
+* Renan Souza
